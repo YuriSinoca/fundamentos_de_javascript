@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let numero1 = parseInt(prompt("Digite um numero"))
+       let numero2 = parseInt(prompt("Digite um segundo numero"))       //parseInt transforma os textos em numeros reais 
+       console.log(numero1 + numero2)
+
+       let nome = prompt("Digite o seu nome")
+
+       console.log(nome.toLocaleLowerCase)()
+       console.log(nome.toUppercase())
+       if(nome.toLowerCase().includes("a") || nome.includes("A")){
+        console.log("O seu nome tem a letra a");
+       } else {
+        console.log("O seu nome não tem a letra a");
+       }
+    </script>
+</body>
+</html>

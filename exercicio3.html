@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ganhou = false
+        let numeroSorteado = Math.floor(Math.random() * 20) + 1
+        let tentativas = 5
+      
+
+
+        while (!ganhou && tentativas > 0) {
+
+            let palpite = parseInt(prompt("Qual é o seu palpite?"))
+
+            if (numeroSorteado == palpite) {
+                alert("Parabens você acertou");
+                ganhou = true
+            } else {
+                tentativas--
+                alert(`Você errou tente novamente, você tem mais, ${tentativas}, tentativas!`);
+                alert(`A diferença é ${numeroSorteado - palpite}`)
+            }
+
+
+        }
+        console.log(numeroSorteado)
+    </script>
+</body>
+
+</html>
