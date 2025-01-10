@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //saldo inicial
+        let saldo = 1000
+
+        function operacaoBancaria() {
+            let operacao = prompt("Qual operação você deseja realizar? (depositar/sacar/sair)")
+
+            if (operacao === "depositar") {
+                let valor = parseFloat(prompt("Qual é o valor que você deseja depositar"))
+                if (valor < 0) {
+                    alert("Valor invalido!")
+                } else {
+                    saldo = saldo + valor
+                    alert(`Deposito realizado com sucesso! Saldo atual ${saldo}`)
+                }
+            } else if (operacao == "sacar") {
+                let valor = parseFloat(prompt("Qual é o valor você deseja sacar"))
+
+                if (valor > saldo) {
+                    alert("Saldo insuficiente!")
+                } else {
+                    if (valor <= 0) {
+                        alert("Valor inválido")
+                    } else {
+                        saldo = saldo - valor
+                        alert(`Saque realizado com sucesso! Saldo atual ${saldo}`)
+                    }
+                }
+            }
+            alert(`Obrigado por usar o sistema bancária, Saldo final ${saldo}`)
+        }
+
+        operacaoBancaria()
+    </script>
+</body>
+
+</html>

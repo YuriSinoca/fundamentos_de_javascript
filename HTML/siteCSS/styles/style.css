@@ -1,0 +1,46 @@
+body{
+    background-color:rgb(0, 0, 0);
+    color:white;
+    font-family:Arial, Helvetica, sans-serif
+}
+p{
+    font-size: 12px;
+    background-color:gray;
+/* largura */
+    width: 90;
+/* altura */
+    height: 100px;
+/* borda */
+    border: 2px solid #000;
+/* Definir todos os lado com uma unica tag */
+    margin: 200px 200px 200px 200px;
+    margin-right: 10px;
+    margin-top: 4;
+    margin-left: 8px;
+    margin-bottom: 5px;
+/* Sempre a ultima requisição é a qual vale */
+    margin: 10px;
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+strong{
+    background-color: blueviolet;
+/* margin = distancia  */
+    margin-right: 100px;
+    margin-bottom: 100px;
+    
+
+}
+
+.sub{
+    text-align: left;
+    background-color: unset;
+    height: 10px;
+    border: none;
+}
+
+#mes{
+    background-color:aqua;
+}
